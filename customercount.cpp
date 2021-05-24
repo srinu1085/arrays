@@ -1,28 +1,31 @@
-//ids for only 1,2,3
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-int a[100],temp=0,count=0,flag=0;
-    for(int i=0;i<10;i++)
-    {
-        cin>>a[i];
-    }          
-    for(int i=0;i<10;i++)
-    {
-        if(a[i]==1)
-        {
-            temp++;
-        }
-        else if(a[i]==2)
-        {
-            count++;
-        }
-        else
-        {
-            flag++;
-        }
-        
-    }
-    cout<<temp<<"-->1"<<"\t"<<count<<"-->2"<<"\t"<<flag<<"-->3";
+	int n,a[n];
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		cin>>a[i];
+	}
+	int *maxi=max_element(a,a+n);
+	int frq[*maxi+1]={0};
+	for(int i=0;i<n;i++)
+	{
+		frq[a[i]]++;
+	}
+	for(int i=0;i<=*maxi;i++)
+	{
+		cout<<frq[i]<<" ";
+	}
+
+	/*map<int,int>dic;
+	for(int i=0;i<n;i++)
+	{
+		dic[a[i]]++;
+	}
+	for(auto it:dic)
+	{
+		cout<<it.first<<" "<<it.second<<endl;
+	}*/
 }
