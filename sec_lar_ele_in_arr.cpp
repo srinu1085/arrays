@@ -19,14 +19,14 @@ int main()
             ele2=ele1;
             ele1=a[i];
         }
-        else if(a[i]>ele2)
+        else if(a[i]>ele2 && ele2!=INT_MIN)
         {
             ele2=a[i];
         }
     }
     if(ele2==INT_MIN)
     {
-        cout<<-1;
+        cout<<"all are equal";
     }
     else
     {
