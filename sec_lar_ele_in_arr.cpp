@@ -7,7 +7,7 @@ int main()
     int n;
     cin>>n;
     int a[n];
-    for(int i=0;i<n;i++)//10,20,15
+    for(int i=0;i<n;i++)
     {
         cin>>a[i];
     }
@@ -26,7 +26,7 @@ int main()
     }
     if(ele2==INT_MIN)
     {
-        cout<<"all are equal";
+        cout<<"all are equal elements";
     }
     else
     {
