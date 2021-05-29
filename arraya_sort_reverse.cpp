@@ -4,8 +4,7 @@ int main()
 {
     //to check whether array is sorted or not
 
-
-    /*int n,a[n],flag=0;
+    int n,a[n],flag=0;
     cin>>n;
     for(int i=0;i<n;i++)
     {
@@ -29,12 +28,12 @@ int main()
     else
     {
         cout<<"not sorted";
-    }*/
+    }
 
 
     //another way to check wether array is sorted or not
 
-    /*    int n,a[n],flag=0;
+    int n,a[n],flag=0;
     cin>>n;
     for(int i=0;i<n;i++)
     {
@@ -55,15 +54,14 @@ int main()
     else
     {
         cout<<"array is not sorted";
-    }*/
+    }
 
 
 
     //reversing of array
-
 	int n,j,i,temp;
-	cin>>n;
-    int a[n];
+  	cin>>n;
+        int a[n];
 	for(int i=0;i<n;i++)
 	{
 		cin>>a[i];
