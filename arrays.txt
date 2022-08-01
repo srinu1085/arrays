@@ -1,0 +1,41 @@
+#1.sum of sub arrays, sub arrays, sub arrays sum
+
+n=int(input())
+l=list(map(int,input().split()))
+res=[]
+ans=0
+s=[]
+for i in range(n):
+    c=0
+    p=[]
+    for j in range(i+1):
+        p.append(l[j])
+        c+=l[j]
+    res.append(c)
+    s.append(p)
+    ans+=c
+print(ans)
+print(s)
+print(res)
+   
+
+#2.string sub arrays
+n=input()
+l=[]
+for i in range(len(n)):
+    l.append(n[i])
+res=[]
+s=[]
+for i in range(len(n)):
+    c=""
+    p=[]
+    for j in range(i+1):
+        p.append(l[j])
+        c+=l[j]
+    res.append(c)
+    s.append(p)
+print(s)
+print(res)
+    
+
+#3.
